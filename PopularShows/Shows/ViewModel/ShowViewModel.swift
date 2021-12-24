@@ -16,13 +16,13 @@ class ShowViewModel: BaseViewModel {
     
     func requestShows() {
         APICalling().getShows().subscribe(onNext: { [weak self] welcomeArray in
-            welcomeArray.compactMap { welcome in
-                welcome.show
+          let showsFromResponse = welcomeArray.compactMap {welcome in
+              welcome.show
             }
-            //self?.messages.accept(sessionMessages!)
+            self?.shows.accept(showsFromResponse)
         }, onError: { [weak self] error in
             print(error)
-           // self?.errorNotification.accept(true)
+            self?.message.accept((error.localizedDescription , .error))
         }).disposed(by: disposeBag)
         
     }

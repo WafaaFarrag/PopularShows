@@ -1,4 +1,5 @@
 PODS:
+  - Cosmos (23.0.0)
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
@@ -17,6 +18,7 @@ PODS:
   - Swinject (2.8.1)
 
 DEPENDENCIES:
+  - Cosmos (~> 23.0)
   - NVActivityIndicatorView (~> 5.1)
   - R.swift (~> 6.1)
   - RxCocoa (~> 6.2)
@@ -26,6 +28,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Cosmos
     - NVActivityIndicatorView
     - R.swift
     - R.swift.Library
@@ -36,6 +39,7 @@ SPEC REPOS:
     - Swinject
 
 SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
@@ -45,6 +49,6 @@ SPEC CHECKSUMS:
   SwiftMessages: 9cca50659fa22bb523b4dd2a958d4442e843a354
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
 
-PODFILE CHECKSUM: 329544f9cd85b33650bf02a94d8a504b8969fe4f
+PODFILE CHECKSUM: 406ee8b029217481ce0fdc6362e45d216916b9b8
 
 COCOAPODS: 1.11.2

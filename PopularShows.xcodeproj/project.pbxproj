@@ -20,6 +20,9 @@
 		8972DD7927758DBD00FFC54C /* NeworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD7827758DBD00FFC54C /* NeworkManager.swift */; };
 		8972DD7E2775927F00FFC54C /* ShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD7D2775927F00FFC54C /* ShowViewModel.swift */; };
 		8972DD802775A73200FFC54C /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD7F2775A73200FFC54C /* ShowsViewController.swift */; };
+		8972DD84277640C400FFC54C /* ViewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD82277640C400FFC54C /* ViewsTableViewCell.swift */; };
+		8972DD85277640C400FFC54C /* ViewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8972DD83277640C400FFC54C /* ViewsTableViewCell.xib */; };
+		89C58AB927766235009E2F34 /* Utils+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C58AB827766235009E2F34 /* Utils+String.swift */; };
 		B01B381080044E3F5C1B68B4 /* Pods_PopularShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F342DA4BC775E44302EEDF21 /* Pods_PopularShows.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,9 @@
 		8972DD7827758DBD00FFC54C /* NeworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeworkManager.swift; sourceTree = "<group>"; };
 		8972DD7D2775927F00FFC54C /* ShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewModel.swift; sourceTree = "<group>"; };
 		8972DD7F2775A73200FFC54C /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
+		8972DD82277640C400FFC54C /* ViewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsTableViewCell.swift; sourceTree = "<group>"; };
+		8972DD83277640C400FFC54C /* ViewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewsTableViewCell.xib; sourceTree = "<group>"; };
+		89C58AB827766235009E2F34 /* Utils+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+String.swift"; sourceTree = "<group>"; };
 		C4B048442FE15A02A5CA1B5A /* Pods-PopularShows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularShows.release.xcconfig"; path = "Target Support Files/Pods-PopularShows/Pods-PopularShows.release.xcconfig"; sourceTree = "<group>"; };
 		F342DA4BC775E44302EEDF21 /* Pods_PopularShows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopularShows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				8972DD732775788400FFC54C /* SwiftMessagesUtils.swift */,
+				89C58AB827766235009E2F34 /* Utils+String.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -179,9 +186,19 @@
 		8972DD7C2775926500FFC54C /* ViewControlles */ = {
 			isa = PBXGroup;
 			children = (
+				8972DD81277640A600FFC54C /* Views */,
 				8972DD7F2775A73200FFC54C /* ShowsViewController.swift */,
 			);
 			path = ViewControlles;
+			sourceTree = "<group>";
+		};
+		8972DD81277640A600FFC54C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8972DD82277640C400FFC54C /* ViewsTableViewCell.swift */,
+				8972DD83277640C400FFC54C /* ViewsTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8972DD85277640C400FFC54C /* ViewsTableViewCell.xib in Resources */,
 				8972DD60277572E200FFC54C /* LaunchScreen.storyboard in Resources */,
 				8972DD5D277572E200FFC54C /* Assets.xcassets in Resources */,
 				8972DD5B277572E100FFC54C /* Main.storyboard in Resources */,
@@ -298,10 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C58AB927766235009E2F34 /* Utils+String.swift in Sources */,
 				8972DD7E2775927F00FFC54C /* ShowViewModel.swift in Sources */,
 				8972DD802775A73200FFC54C /* ShowsViewController.swift in Sources */,
 				8972DD71277577DA00FFC54C /* BaseViewController.swift in Sources */,
 				8972DD58277572E100FFC54C /* ViewController.swift in Sources */,
+				8972DD84277640C400FFC54C /* ViewsTableViewCell.swift in Sources */,
 				8972DD6F277577C200FFC54C /* BaseViewModel.swift in Sources */,
 				8972DD54277572E100FFC54C /* AppDelegate.swift in Sources */,
 				8972DD7727758B1100FFC54C /* Show.swift in Sources */,
