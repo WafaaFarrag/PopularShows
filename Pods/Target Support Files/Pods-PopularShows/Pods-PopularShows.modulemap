@@ -1,0 +1,6 @@
+framework module Pods_PopularShows {
+  umbrella header "Pods-PopularShows-umbrella.h"
+
+  export *
+  module * { export * }
+}
