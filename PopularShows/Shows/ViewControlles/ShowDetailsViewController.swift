@@ -102,10 +102,14 @@ class ShowDetailsViewController: BaseViewController<ShowDetailsViewModel> {
     
     
     private func removeViewFromInnerStack(tag: Int) {
-        (containerStacView.arrangedSubviews[1] as! UIStackView
-        ).arrangedSubviews.first(where: { view in
+      let innerStack = containerStacView.arrangedSubviews[1] as! UIStackView
+            
+          if let element =  innerStack.arrangedSubviews.first(where: { view in
             view.tag == tag
-        })?.removeFromSuperview()
+          }) {
+            element.removeFromSuperview()
+          }
+            
     }
     
 }

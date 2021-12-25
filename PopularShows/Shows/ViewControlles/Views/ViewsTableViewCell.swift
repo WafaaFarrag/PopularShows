@@ -10,6 +10,7 @@ import Cosmos
 
 class ViewsTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var containerStackView: UIStackView!
     @IBOutlet weak var showImageView: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var premiered: UILabel!
@@ -20,6 +21,17 @@ class ViewsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        showImageView.image = UIImage(named:"not-applicable")
+        name.text = ""
+        premiered.text = ""
+        runtime.text = ""
+        link.text = ""
+        
+        rate.rating = 0
     }
     
     func setupCell(show: Show) {
@@ -36,14 +48,14 @@ class ViewsTableViewCell: UITableViewCell {
         }
         
         premiered.text = "Premiered: \(show.premiered)"
+        
         if let runtimeInt = show.runtime {
             runtime.text = "Runtime: \(String(describing: runtimeInt))"
         }
-    
-        if let rating = show.rating.average {
-           rate.rating = Double(rating)
-        }
         
+        if let rating = show.rating.average {
+            rate.rating = Double(rating)
+        }
     }
     
 }
