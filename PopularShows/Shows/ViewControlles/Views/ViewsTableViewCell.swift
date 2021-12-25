@@ -15,7 +15,7 @@ class ViewsTableViewCell: UITableViewCell {
     @IBOutlet weak var premiered: UILabel!
     @IBOutlet weak var runtime: UILabel!
     @IBOutlet weak var link: UITextView!
-    @IBOutlet weak var rate: UIView!
+    @IBOutlet weak var rate: CosmosView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,7 +41,7 @@ class ViewsTableViewCell: UITableViewCell {
         }
     
         if let rating = show.rating.average {
-           // rate.rating = Double(rating)
+           rate.rating = Double(rating)
         }
         
     }

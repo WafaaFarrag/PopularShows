@@ -30,8 +30,8 @@
             filePath = "PopularShows/Shows/ViewControlles/ShowDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113">
+            startingLineNumber = "112"
+            endingLineNumber = "112">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -44,8 +44,8 @@
             filePath = "PopularShows/Shows/ViewControlles/ShowDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "setupBinding()"
             landmarkType = "7">
          </BreakpointContent>

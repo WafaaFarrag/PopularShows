@@ -20,7 +20,7 @@ class ShowDetailsViewController: BaseViewController<ShowDetailsViewModel> {
     @IBOutlet weak var runtimeLabel: UILabel!
     @IBOutlet weak var premieredLabel: UILabel!
     @IBOutlet weak var linkTextView: UITextView!
-    @IBOutlet weak var rateView: UIView!
+    @IBOutlet weak var rateView: CosmosView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var showImageView: UIImageView!
@@ -29,11 +29,11 @@ class ShowDetailsViewController: BaseViewController<ShowDetailsViewModel> {
         super.viewDidLoad()
         setupView()
         setupBinding()
-        // Do any additional setup after loading the view.
     }
     
     func setupView() {
-        scrollView.contentSize = CGSize(width:view.frame.width, height: view.frame.height+100)
+//scrollView.contentSize = CGSize(width:view.frame.width, height: view.frame.height+100)
+        
         
     }
     
@@ -53,16 +53,15 @@ class ShowDetailsViewController: BaseViewController<ShowDetailsViewModel> {
             }
             
             if let rating = show.rating.average {
-                // self?.rateView.rating = Double(rating)
+                self?.rateView.rating = Double(rating)
             } else {
-                self?.removeViewFromInnerStack(tag: 1)
+                self?.removeViewFromInnerStack(tag: 11)
             }
             
             if let summary = self?.viewModel.getSummary() {
                 self?.summaryTextview.attributedText = summary
             } else {
                 self?.removeViewFromInnerStack(tag: 10)
-                
             }
             
             if let network = show.network {
@@ -89,7 +88,7 @@ class ShowDetailsViewController: BaseViewController<ShowDetailsViewModel> {
             self?.endedLabel.text = "Ended at: \(show.ended)"
             
             // must be at the last to remove and make sure that first stack still found during changing in the inner stack.
-            if let image = show.image, let url = URL(string: image.original) {
+            if let image = show.image, let url = URL(string: image.medium) {
                 self?.showImageView.downloadedFrom(url: url)
             } else {
                 self?.containerStacView.arrangedSubviews.first(where: {
