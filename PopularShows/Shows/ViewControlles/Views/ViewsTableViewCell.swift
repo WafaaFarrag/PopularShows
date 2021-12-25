@@ -16,6 +16,7 @@ class ViewsTableViewCell: UITableViewCell {
     @IBOutlet weak var runtime: UILabel!
     @IBOutlet weak var link: UITextView!
     @IBOutlet weak var rate: CosmosView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

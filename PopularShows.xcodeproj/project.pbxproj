@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89180719277670BF00C27AB4 /* ShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89180718277670BF00C27AB4 /* ShowDetailsViewController.swift */; };
+		8918071B277670DB00C27AB4 /* ShowDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918071A277670DB00C27AB4 /* ShowDetailsViewModel.swift */; };
 		8972DD54277572E100FFC54C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD53277572E100FFC54C /* AppDelegate.swift */; };
 		8972DD56277572E100FFC54C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD55277572E100FFC54C /* SceneDelegate.swift */; };
 		8972DD58277572E100FFC54C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD57277572E100FFC54C /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		0AA6C163C97B7694570A1E39 /* Pods-PopularShows.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularShows.debug.xcconfig"; path = "Target Support Files/Pods-PopularShows/Pods-PopularShows.debug.xcconfig"; sourceTree = "<group>"; };
+		89180718277670BF00C27AB4 /* ShowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsViewController.swift; sourceTree = "<group>"; };
+		8918071A277670DB00C27AB4 /* ShowDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailsViewModel.swift; sourceTree = "<group>"; };
 		8972DD50277572E100FFC54C /* PopularShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopularShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8972DD53277572E100FFC54C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8972DD55277572E100FFC54C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				8972DD7D2775927F00FFC54C /* ShowViewModel.swift */,
+				8918071A277670DB00C27AB4 /* ShowDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			children = (
 				8972DD81277640A600FFC54C /* Views */,
 				8972DD7F2775A73200FFC54C /* ShowsViewController.swift */,
+				89180718277670BF00C27AB4 /* ShowDetailsViewController.swift */,
 			);
 			path = ViewControlles;
 			sourceTree = "<group>";
@@ -319,12 +325,14 @@
 				89C58AB927766235009E2F34 /* Utils+String.swift in Sources */,
 				8972DD7E2775927F00FFC54C /* ShowViewModel.swift in Sources */,
 				8972DD802775A73200FFC54C /* ShowsViewController.swift in Sources */,
+				89180719277670BF00C27AB4 /* ShowDetailsViewController.swift in Sources */,
 				8972DD71277577DA00FFC54C /* BaseViewController.swift in Sources */,
 				8972DD58277572E100FFC54C /* ViewController.swift in Sources */,
 				8972DD84277640C400FFC54C /* ViewsTableViewCell.swift in Sources */,
 				8972DD6F277577C200FFC54C /* BaseViewModel.swift in Sources */,
 				8972DD54277572E100FFC54C /* AppDelegate.swift in Sources */,
 				8972DD7727758B1100FFC54C /* Show.swift in Sources */,
+				8918071B277670DB00C27AB4 /* ShowDetailsViewModel.swift in Sources */,
 				8972DD56277572E100FFC54C /* SceneDelegate.swift in Sources */,
 				8972DD742775788400FFC54C /* SwiftMessagesUtils.swift in Sources */,
 				8972DD7927758DBD00FFC54C /* NeworkManager.swift in Sources */,

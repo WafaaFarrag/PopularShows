@@ -15,9 +15,9 @@ struct WelcomeElement: Codable {
 
 // MARK: - Show
 struct Show: Codable {
-    let id: Int
+    let id: Int 
     let url: String
-    let name: String // *
+    let name: String  // *
     let type: TypeEnum
     let language: Language
     let genres: [String]
@@ -41,6 +41,8 @@ struct Show: Codable {
         case id, url, name, type, language, genres, status, runtime, averageRuntime, premiered, ended, officialSite, schedule, rating, weight, network, webChannel, dvdCountry, externals, image, summary, updated
         case links = "_links"
     }
+    
+
 }
 
 // MARK: - Externals
@@ -117,7 +119,7 @@ class JSONNull: Codable, Hashable {
         return true
     }
 
-    public var hashValue: Int {
+    public var hashValue: Int { //TODO
         return 0
     }
 
