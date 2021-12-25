@@ -15,7 +15,7 @@ class BaseViewController <VM: BaseViewModel>: UIViewController {
     
     let disposeBag = DisposeBag()
     let activityIndicator = NVActivityIndicatorView(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 25, height: 25))
-)
+    )
     
     var viewModel: VM! {
         didSet {

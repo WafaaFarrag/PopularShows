@@ -23,9 +23,7 @@ class ShowDetailsViewModel : BaseViewModel {
     func getSummary() -> NSAttributedString? {
         if let htmlData = NSString(string: showDetails.value.summary).data(using: String.Encoding.utf8.rawValue) {
             let options = [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html]
-            
             return try?  NSAttributedString(data: htmlData, options: options, documentAttributes: nil)
-            
         }
         return nil
     }
@@ -34,7 +32,7 @@ class ShowDetailsViewModel : BaseViewModel {
         let time = showDetails.value.schedule.time
         let days = showDetails.value.schedule.days
         if time.isEmpty || days.isEmpty {
-          return nil
+            return nil
         } else {
             var timeShow = "\(time) on "
             for day in days {
@@ -42,9 +40,5 @@ class ShowDetailsViewModel : BaseViewModel {
             }
             return timeShow
         }
-
-        
     }
-    
-    
 }

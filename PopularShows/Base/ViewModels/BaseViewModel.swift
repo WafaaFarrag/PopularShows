@@ -14,12 +14,12 @@ class BaseViewModel {
     
     // used to show long message
     let message = PublishRelay<(String, MessageTheme)>()
-
+    
     // used to show small message
     let liteMessage = PublishRelay<(String, MessageTheme)>()
     
     let isLoadingRequestRelay = PublishRelay<Bool> ()
-
+    
 }
 
 // to send message size to swiftMessages

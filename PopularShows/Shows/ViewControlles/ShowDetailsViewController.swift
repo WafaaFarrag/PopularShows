@@ -22,20 +22,13 @@ class ShowDetailsViewController: BaseViewController<ShowDetailsViewModel> {
     @IBOutlet weak var linkTextView: UITextView!
     @IBOutlet weak var rateView: CosmosView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var showImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
         setupBinding()
     }
     
-    func setupView() {
-//scrollView.contentSize = CGSize(width:view.frame.width, height: view.frame.height+100)
-        
-        
-    }
     
     func  setupBinding() {
         viewModel.showDetails.subscribe(onNext: { [weak self] show in
@@ -95,21 +88,18 @@ class ShowDetailsViewController: BaseViewController<ShowDetailsViewModel> {
                     $0.tag == 1
                 })?.removeFromSuperview()
             }
-            
-            
         }).disposed(by: disposeBag)
     }
     
     
     private func removeViewFromInnerStack(tag: Int) {
-      let innerStack = containerStacView.arrangedSubviews[1] as! UIStackView
-            
-          if let element =  innerStack.arrangedSubviews.first(where: { view in
+        let innerStack = containerStacView.arrangedSubviews[1] as! UIStackView
+        if let element =  innerStack.arrangedSubviews.first(where: { view in
             view.tag == tag
-          }) {
+        }) {
             element.removeFromSuperview()
-          }
-            
+        }
+        
     }
     
 }

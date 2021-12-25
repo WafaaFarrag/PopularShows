@@ -20,7 +20,6 @@ class ViewsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override func prepareForReuse() {
@@ -30,7 +29,6 @@ class ViewsTableViewCell: UITableViewCell {
         premiered.text = ""
         runtime.text = ""
         link.text = ""
-        
         rate.rating = 0
     }
     

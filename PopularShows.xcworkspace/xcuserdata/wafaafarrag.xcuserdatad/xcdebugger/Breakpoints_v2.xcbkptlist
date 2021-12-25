@@ -14,8 +14,40 @@
             filePath = "PopularShows/Shows/ViewControlles/ShowDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116">
+            startingLineNumber = "106"
+            endingLineNumber = "106">
+            <Locations>
+               <Location
+                  uuid = "4024A95D-E63A-49A3-9C2A-928FDD3DEA7E - e62eb6fba869710f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PopularShows.ShowDetailsViewController.removeViewFromInnerStack(tag: Swift.Int) -&gt; ()"
+                  moduleName = "PopularShows"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wafaafarrag/Desktop/PopularShows/PopularShows/Shows/ViewControlles/ShowDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  uuid = "4024A95D-E63A-49A3-9C2A-928FDD3DEA7E - 22bb7ab2e526627d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIView) -&gt; Swift.Bool in PopularShows.ShowDetailsViewController.removeViewFromInnerStack(tag: Swift.Int) -&gt; ()"
+                  moduleName = "PopularShows"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wafaafarrag/Desktop/PopularShows/PopularShows/Shows/ViewControlles/ShowDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -28,41 +60,9 @@
             filePath = "PopularShows/Shows/ViewControlles/ShowDetailsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "setupBinding()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A0809D06-1BEE-4A91-B0C4-BE06F76CC3C5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PopularShows/Shows/ViewModel/ShowDetailsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "getScheduleTime()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0BB21BB6-7D5E-458B-AFEA-95905A48624F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PopularShows/Shows/ViewModel/ShowDetailsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "getScheduleTime()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

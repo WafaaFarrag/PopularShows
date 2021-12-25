@@ -22,11 +22,11 @@ class APIRequest {
     var parameters = [String: String]()
     
     func request(with baseURL: URL) -> URLRequest {
-          var request = URLRequest(url: baseURL)
-           request.httpMethod = method.rawValue
-           request.addValue("application/json", forHTTPHeaderField: "Accept")
-           return request
-       }
+        var request = URLRequest(url: baseURL)
+        request.httpMethod = method.rawValue
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        return request
+    }
 }
 
 

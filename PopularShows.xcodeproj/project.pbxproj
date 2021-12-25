@@ -11,7 +11,6 @@
 		8918071B277670DB00C27AB4 /* ShowDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8918071A277670DB00C27AB4 /* ShowDetailsViewModel.swift */; };
 		8972DD54277572E100FFC54C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD53277572E100FFC54C /* AppDelegate.swift */; };
 		8972DD56277572E100FFC54C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD55277572E100FFC54C /* SceneDelegate.swift */; };
-		8972DD58277572E100FFC54C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD57277572E100FFC54C /* ViewController.swift */; };
 		8972DD5B277572E100FFC54C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8972DD59277572E100FFC54C /* Main.storyboard */; };
 		8972DD5D277572E200FFC54C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8972DD5C277572E200FFC54C /* Assets.xcassets */; };
 		8972DD60277572E200FFC54C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8972DD5E277572E200FFC54C /* LaunchScreen.storyboard */; };
@@ -24,7 +23,7 @@
 		8972DD802775A73200FFC54C /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD7F2775A73200FFC54C /* ShowsViewController.swift */; };
 		8972DD84277640C400FFC54C /* ViewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972DD82277640C400FFC54C /* ViewsTableViewCell.swift */; };
 		8972DD85277640C400FFC54C /* ViewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8972DD83277640C400FFC54C /* ViewsTableViewCell.xib */; };
-		89C58AB927766235009E2F34 /* Utils+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C58AB827766235009E2F34 /* Utils+String.swift */; };
+		89C58AB927766235009E2F34 /* Utils+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C58AB827766235009E2F34 /* Utils+UIImage.swift */; };
 		B01B381080044E3F5C1B68B4 /* Pods_PopularShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F342DA4BC775E44302EEDF21 /* Pods_PopularShows.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +34,6 @@
 		8972DD50277572E100FFC54C /* PopularShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopularShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8972DD53277572E100FFC54C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8972DD55277572E100FFC54C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8972DD57277572E100FFC54C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8972DD5A277572E100FFC54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8972DD5C277572E200FFC54C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8972DD5F277572E200FFC54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,7 +47,7 @@
 		8972DD7F2775A73200FFC54C /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
 		8972DD82277640C400FFC54C /* ViewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsTableViewCell.swift; sourceTree = "<group>"; };
 		8972DD83277640C400FFC54C /* ViewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewsTableViewCell.xib; sourceTree = "<group>"; };
-		89C58AB827766235009E2F34 /* Utils+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+String.swift"; sourceTree = "<group>"; };
+		89C58AB827766235009E2F34 /* Utils+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+UIImage.swift"; sourceTree = "<group>"; };
 		C4B048442FE15A02A5CA1B5A /* Pods-PopularShows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopularShows.release.xcconfig"; path = "Target Support Files/Pods-PopularShows/Pods-PopularShows.release.xcconfig"; sourceTree = "<group>"; };
 		F342DA4BC775E44302EEDF21 /* Pods_PopularShows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopularShows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,7 +109,6 @@
 				8972DD67277572F400FFC54C /* Network */,
 				8972DD53277572E100FFC54C /* AppDelegate.swift */,
 				8972DD55277572E100FFC54C /* SceneDelegate.swift */,
-				8972DD57277572E100FFC54C /* ViewController.swift */,
 				8972DD59277572E100FFC54C /* Main.storyboard */,
 				8972DD5C277572E200FFC54C /* Assets.xcassets */,
 				8972DD5E277572E200FFC54C /* LaunchScreen.storyboard */,
@@ -157,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				8972DD732775788400FFC54C /* SwiftMessagesUtils.swift */,
-				89C58AB827766235009E2F34 /* Utils+String.swift */,
+				89C58AB827766235009E2F34 /* Utils+UIImage.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -322,12 +319,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C58AB927766235009E2F34 /* Utils+String.swift in Sources */,
+				89C58AB927766235009E2F34 /* Utils+UIImage.swift in Sources */,
 				8972DD7E2775927F00FFC54C /* ShowViewModel.swift in Sources */,
 				8972DD802775A73200FFC54C /* ShowsViewController.swift in Sources */,
 				89180719277670BF00C27AB4 /* ShowDetailsViewController.swift in Sources */,
 				8972DD71277577DA00FFC54C /* BaseViewController.swift in Sources */,
-				8972DD58277572E100FFC54C /* ViewController.swift in Sources */,
 				8972DD84277640C400FFC54C /* ViewsTableViewCell.swift in Sources */,
 				8972DD6F277577C200FFC54C /* BaseViewModel.swift in Sources */,
 				8972DD54277572E100FFC54C /* AppDelegate.swift in Sources */,

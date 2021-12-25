@@ -16,8 +16,8 @@ class ShowViewModel: BaseViewModel {
     
     func requestShows() {
         APICalling().getShows().subscribe(onNext: { [weak self] welcomeArray in
-          let showsFromResponse = welcomeArray.compactMap {welcome in
-              welcome.show
+            let showsFromResponse = welcomeArray.compactMap {welcome in
+                welcome.show
             }
             self?.shows.accept(showsFromResponse)
         }, onError: { [weak self] error in

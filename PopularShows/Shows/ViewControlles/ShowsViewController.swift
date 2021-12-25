@@ -10,21 +10,21 @@ import UIKit
 class ShowsViewController: BaseViewController<ShowViewModel> {
     
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = ShowViewModel() // TODO
-        viewModel.requestShows()
         setupView()
         setupBinding()
     }
     
-    func setupView() {
+   private func setupView() {
+        viewModel = ShowViewModel()
+        viewModel.requestShows()
         registerTableViewCells()
     }
     
     
-    func  setupBinding() {
-        
+   private func  setupBinding() {
         _ = viewModel.shows.bind(to: tableView.rx.items(cellIdentifier: "showCell")) { ( row, model, cell) in
             (cell as!ViewsTableViewCell).setupCell(show: model)
         }.disposed(by: disposeBag)
