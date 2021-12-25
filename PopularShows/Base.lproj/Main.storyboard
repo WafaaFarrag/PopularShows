@@ -61,10 +61,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGY-4E-Os2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1412.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1184.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="GEm-Ue-iKo">
-                                                <rect key="frame" x="0.0" y="5" width="414" height="1164.5"/>
+                                                <rect key="frame" x="0.0" y="20" width="414" height="1164.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" tag="1" contentMode="center" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bbh-Ct-q9m">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
@@ -147,18 +147,18 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="9" contentMode="scaleToFill" scrollEnabled="NO" text="link" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dBV-3F-4LK">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="10" contentMode="scaleToFill" editable="NO" text="summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kGY-UT-tnP">
                                                                 <rect key="frame" x="0.0" y="806.5" width="414" height="89.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="textColor" systemColor="labelColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="10" contentMode="scaleToFill" editable="NO" text="summary" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kGY-UT-tnP">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="9" contentMode="scaleToFill" scrollEnabled="NO" text="link" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dBV-3F-4LK">
                                                                 <rect key="frame" x="0.0" y="896" width="414" height="89.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="textColor" systemColor="labelColor"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
                                                         </subviews>
@@ -169,10 +169,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="GEm-Ue-iKo" firstAttribute="top" secondItem="aGY-4E-Os2" secondAttribute="top" constant="5" id="0wQ-DX-as9"/>
+                                            <constraint firstItem="GEm-Ue-iKo" firstAttribute="top" secondItem="aGY-4E-Os2" secondAttribute="top" constant="20" id="0wQ-DX-as9"/>
                                             <constraint firstItem="GEm-Ue-iKo" firstAttribute="leading" secondItem="aGY-4E-Os2" secondAttribute="leading" id="Nkg-ua-ggX"/>
                                             <constraint firstAttribute="trailing" secondItem="GEm-Ue-iKo" secondAttribute="trailing" id="Q1g-cZ-wGx"/>
-                                            <constraint firstAttribute="bottom" secondItem="GEm-Ue-iKo" secondAttribute="bottom" constant="243" id="XrW-QD-nc4"/>
+                                            <constraint firstAttribute="bottom" secondItem="GEm-Ue-iKo" secondAttribute="bottom" id="XrW-QD-nc4"/>
                                         </constraints>
                                     </view>
                                 </subviews>
