@@ -39,7 +39,6 @@ class ShowsViewController: BaseViewController<ShowViewModel> {
         
     }
     
-    
     private func registerTableViewCells() {
         let showCell = UINib(nibName: "ViewsTableViewCell",
                              bundle: nil)

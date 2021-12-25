@@ -16,38 +16,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "106"
             endingLineNumber = "106">
-            <Locations>
-               <Location
-                  uuid = "4024A95D-E63A-49A3-9C2A-928FDD3DEA7E - e62eb6fba869710f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PopularShows.ShowDetailsViewController.removeViewFromInnerStack(tag: Swift.Int) -&gt; ()"
-                  moduleName = "PopularShows"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wafaafarrag/Desktop/PopularShows/PopularShows/Shows/ViewControlles/ShowDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "107"
-                  endingLineNumber = "107"
-                  offsetFromSymbolStart = "440">
-               </Location>
-               <Location
-                  uuid = "4024A95D-E63A-49A3-9C2A-928FDD3DEA7E - 22bb7ab2e526627d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.UIView) -&gt; Swift.Bool in PopularShows.ShowDetailsViewController.removeViewFromInnerStack(tag: Swift.Int) -&gt; ()"
-                  moduleName = "PopularShows"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wafaafarrag/Desktop/PopularShows/PopularShows/Shows/ViewControlles/ShowDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -63,6 +31,118 @@
             startingLineNumber = "66"
             endingLineNumber = "66"
             landmarkName = "setupBinding()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82BC1334-7AAB-444E-AEE9-6F8BF217090A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PopularShows/Shows/ViewModel/ShowViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "requestShows()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C31026F-A3AA-470A-BD5E-5930E8BA4B66"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PopularShows/Base/VCs/BaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewModel"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3943FB9B-6641-4F4B-AD1C-0DD0BB12B77B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PopularShows/Network/NeworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "getShows()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3943FB9B-6641-4F4B-AD1C-0DD0BB12B77B - b335bf081ac1a899"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Swift.Array&lt;PopularShows.WelcomeElement&gt;&gt;) -&gt; RxSwift.Disposable in PopularShows.APICalling.getShows() -&gt; RxSwift.Observable&lt;Swift.Array&lt;PopularShows.WelcomeElement&gt;&gt;"
+                  moduleName = "PopularShows"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wafaafarrag/Desktop/PopularShows/PopularShows/Network/NeworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "3943FB9B-6641-4F4B-AD1C-0DD0BB12B77B - b335bf081ac1a899"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Swift.Array&lt;PopularShows.WelcomeElement&gt;&gt;) -&gt; RxSwift.Disposable in PopularShows.APICalling.getShows() -&gt; RxSwift.Observable&lt;Swift.Array&lt;PopularShows.WelcomeElement&gt;&gt;"
+                  moduleName = "PopularShows"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wafaafarrag/Desktop/PopularShows/PopularShows/Network/NeworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "432">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A9AEBCD-8E67-4615-B9F2-A69DB1DB4BFF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PopularShows/Network/NeworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getShows()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F2DF07B-D07F-43DA-8D66-327BA0BDDCB6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PopularShows/Shows/ViewControlles/Views/ViewsTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "setupCell(show:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -25,10 +25,10 @@ class ViewsTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         showImageView.image = UIImage(named:"not-applicable")
-        name.text = ""
-        premiered.text = ""
-        runtime.text = ""
-        link.text = ""
+        name.text = " "
+        premiered.text = " "
+        runtime.text = " "
+        link.text = " "
         rate.rating = 0
     }
     
@@ -49,8 +49,9 @@ class ViewsTableViewCell: UITableViewCell {
         
         if let runtimeInt = show.runtime {
             runtime.text = "Runtime: \(String(describing: runtimeInt))"
-        }
-        
+           }
+ 
+
         if let rating = show.rating.average {
             rate.rating = Double(rating)
         }

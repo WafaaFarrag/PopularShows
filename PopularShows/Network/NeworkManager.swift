@@ -30,7 +30,6 @@ class APIRequest {
 }
 
 
-
 class APICalling {
     // create a method for calling api which is return a Observable
     func getShows() -> Observable<[WelcomeElement]> {
@@ -38,6 +37,7 @@ class APICalling {
             let apiRequest =  APIRequest()
             let request = apiRequest.request(with: apiRequest.baseURL)
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                if let error = error {observer.onError(error)}
                 do {
                     let model: [WelcomeElement] = try JSONDecoder().decode([WelcomeElement].self, from: data ?? Data())
                     observer.onNext(model)

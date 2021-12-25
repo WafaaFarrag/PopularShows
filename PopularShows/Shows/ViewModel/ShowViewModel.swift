@@ -21,10 +21,10 @@ class ShowViewModel: BaseViewModel {
             }
             self?.shows.accept(showsFromResponse)
         }, onError: { [weak self] error in
-            print(error)
             self?.message.accept((error.localizedDescription , .error))
         }).disposed(by: disposeBag)
-        
+
+
     }
 }
 

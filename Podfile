@@ -6,9 +6,7 @@ target 'PopularShows' do
   use_frameworks!
 pod 'RxSwift', '~> 6.2'
 pod 'RxCocoa', '~> 6.2'
-pod 'R.swift', '~> 6.1'
 pod 'SwiftMessages', '~> 9.0'
-pod 'Swinject', '~> 2.8'
 pod 'NVActivityIndicatorView', '~> 5.1'
 pod 'Cosmos', '~> 23.0'
 
