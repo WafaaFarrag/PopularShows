@@ -43,18 +43,33 @@ class ShowDetailsViewController: BaseViewController<ShowDetailsViewModel> {
                 self?.showImageView.downloadedFrom(url: url)
             }
             
-            self?.nameLabel.text = show.name
-            
-            if let url = URL(string: show.links.linksSelf.href) {
-                let attributedString = NSMutableAttributedString(string: "Show link", attributes:[NSAttributedString.Key.link: url])
-                self?.linkTextView.attributedText = attributedString
+            if let link =  self?.viewModel.getLink() {
+                self?.linkTextView.attributedText = link
             }
-            
-            self?.premieredLabel.text = "Premiered: \(show.premiered)"
             
             if let runtimeInt = show.runtime {
                 self?.runtimeLabel.text = "Runtime: \(String(describing: runtimeInt))"
             }
+            
+            if let rating = show.rating.average {
+                self?.rateView.rating = Double(rating)
+            }
+            
+            if let summary = self?.viewModel.getSummary() {
+                self?.summaryTextview.attributedText = summary
+            }
+            
+            if let schedule = self?.viewModel.getScheduleTime() {
+                self?.schadualeLabel.text = schedule
+            }
+            
+            if let network = show.network {
+                self?.networkLabel.text = "Network: \(network.name) at \(network.country.name)"
+            }
+            
+            self?.nameLabel.text = show.name
+
+            self?.premieredLabel.text = "Premiered: \(show.premiered)"
             
             self?.averageRuntimeLabel.text = "Average runtime: \(String(describing: show.averageRuntime))"
             
@@ -62,26 +77,6 @@ class ShowDetailsViewController: BaseViewController<ShowDetailsViewModel> {
             
             self?.endedLabel.text = "Ended at: \(show.ended)"
             
-            if let rating = show.rating.average {
-                self?.rateView.rating = Double(rating)
-            }
-            
-            if let htmlData = NSString(string: show.summary).data(using: String.Encoding.utf8.rawValue) {
-                let options = [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html]
-                
-                let summaryAttributedText = try!  NSAttributedString(data: htmlData, options: options, documentAttributes: nil)
-                self?.summaryTextview.attributedText = summaryAttributedText
-            }
-            if !show.schedule.time.isEmpty , !show.schedule.days.isEmpty {
-                var timeShow = "\(show.schedule.time) on "
-                for day in show.schedule.days {
-                    timeShow.append("\(day) ")
-                }
-                self?.schadualeLabel.text = timeShow
-            }
-            if let network = show.network {
-                self?.networkLabel.text = "Network: \(network.name) at \(network.country.name)"
-            }
         }).disposed(by: disposeBag)
     }
     
