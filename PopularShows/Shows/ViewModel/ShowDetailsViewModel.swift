@@ -33,14 +33,17 @@ class ShowDetailsViewModel : BaseViewModel {
     func getScheduleTime() -> String? {
         let time = showDetails.value.schedule.time
         let days = showDetails.value.schedule.days
-        if !time.isEmpty , !days.isEmpty {
+        if time.isEmpty || days.isEmpty {
+          return nil
+        } else {
             var timeShow = "\(time) on "
             for day in days {
                 timeShow.append("\(day) ")
             }
             return timeShow
         }
-        return nil
+
+        
     }
     
     
