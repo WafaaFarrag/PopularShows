@@ -9,6 +9,7 @@ pod 'RxCocoa', '~> 6.2'
 pod 'SwiftMessages', '~> 9.0'
 pod 'NVActivityIndicatorView', '~> 5.1'
 pod 'Cosmos', '~> 23.0'
+pod 'Instabug'
 
   # Pods for PopularShows
 

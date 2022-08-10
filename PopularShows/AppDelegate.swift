@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import Instabug
 
 var base_URL = "http://api.tvmaze.com/search/"
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Instabug.start(withToken: "4f02a3ab58e345504e029bb1cdbbacef", invocationEvents: [.shake, .screenshot])
         // Override point for customization after application launch.
         return true
     }
